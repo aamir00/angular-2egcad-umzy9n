@@ -1,4 +1,6 @@
-<div *ngFor="let shippingCost of shippingCosts">
-  <p> {{ shippingCost.type }}</p>
-  <p> {{ shippingCost.price }}</p>
+<div class="shipping-item" *ngFor="let shippingCost of shippingCosts | async">
+<span>{{ shippingCost.type }}</span>
+  <span>{{ shippingCost.price | currency }}</span>
 </div>
+
+<a [routerLink]="['/cart']"> Go To Cart </a>

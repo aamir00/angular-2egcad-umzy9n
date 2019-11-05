@@ -11,8 +11,8 @@ export class ProductShippingComponent implements OnInit {
   constructor( private cart : CartService) { }
 
   ngOnInit() {
-    debugger;
-this.shippingCosts = this.cart.getShippingPrices();
+  this.shippingCosts = this.cart.getShippingPrices();
+  // console.log(this.)
   }
 
 }
