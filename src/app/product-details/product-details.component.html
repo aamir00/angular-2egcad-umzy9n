@@ -10,3 +10,10 @@
 <p>
 {{ product.price }}
 </p>
+
+<button (click)="addToCart(product)">
+  Buy Now
+</button>
+<p>
+<a [routerLink]="['/cart']"> Go To Cart </a>
+</p>
